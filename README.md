@@ -4,7 +4,7 @@ A brief description of your project.
 
 ## Deployed Version
 
-Check out the live version of the project [here](https://ai-services.onrender.com).
+🚀 **Check out the live version of the project [here](https://ai-services.onrender.com).**
 
 ## Getting Started
 
