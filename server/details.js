@@ -25,6 +25,6 @@ timestamp:{
     default:Date.now()
 }
 });
-const details=mongoose.model("detail",list);
+const details=mongoose.model("customer_details",list);
 
 module.exports=details;

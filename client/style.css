@@ -41,7 +41,7 @@ body {
     position:fixed;
     width:100vw;
     z-index: 100000;
-    background-color: #333;
+    background-color: #24262b;
     padding: 20px;
     color: #fff;
   }
@@ -56,8 +56,6 @@ body {
     margin: 0 10px;
   }
   
-
-
   nav ul li {
     margin: 0 10px;
     position: relative;
@@ -180,7 +178,7 @@ body {
   } */
   
   .service {
-    height: 370px;
+    height: 401px;
     width: 300px;
     margin: 20px;
     padding: 20px;
@@ -237,9 +235,10 @@ body {
   
   /* Contact Section */
   #contact {
+    margin-top: -50px;
     text-align: center;
     padding: 80px 20px;
-    background-color: #fff;
+    background-color: #f2f2f2;
   }
   
   #contact p {
@@ -248,12 +247,12 @@ body {
     color: #666;
   }
   
-  .footer {
+  /* .footer {
     background-color: #333;
     padding: 20px;
     color: #fff;
     text-align: center;
-  }
+  } */
   /* Rest of the CSS code */
 
 .slider-buttons {
@@ -329,3 +328,189 @@ body {
     margin-top:2px
   }
 }
+
+
+
+/* footer  */
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 32%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px  #757373; /*#bbb we can also u this guys*/
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:white;
+  color: black;
+  
+}
+
+.flip-card-back {
+  /* background-color:#416583; */
+  background-color: #cfd4d5;
+  /* color: white; */
+  color: #112434;
+  transform: rotateY(180deg);
+  line-height: 40px;
+}
+
+.flip-card-back h1{
+  padding-top: 40%;
+}
+
+.service {
+  padding: 20px;
+}
+
+.service h3 {
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 10px;
+}
+
+.read_more {
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+} 
+
+
+.temp{
+  display: flex;
+  flex-direction: row;
+  gap:69px;
+  justify-content: center;
+}
+
+.autoh h2{
+  margin-bottom: 40px;
+}
+
+
+@media(max-width:1020px){
+  .autoh{
+    display: none;
+  } 
+  #services{
+   height: 0px;
+  }
+}
+
+
+@media(min-width:1020px){
+  .services-container{
+    display: none;
+  } 
+}
+
+
