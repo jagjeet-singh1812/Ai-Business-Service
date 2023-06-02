@@ -393,3 +393,9 @@ ul{
     width: 100%;
 }
 }
+@media(max-width:400px) {
+  .card{
+
+    padding: 50px 122px;
+  }
+}
