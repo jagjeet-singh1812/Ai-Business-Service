@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Business Services - Computer Vision</title>
   <link rel="stylesheet" href="./cv.css">
-</head>
-<body>
-    <header>
-      <h1><a href="/index.html">AI Business Services</a></h1>
-        <nav>
-          <ul>
-            <li><a href="/index.html#services">Services</a></li>
-            <li><a href="/index.html#benefits">Benefits</a></li>
-            <li><a href="../conatct/contact.html">Contact</a></li>
-            <li><a href="../about/About.html">About</a></li>        
-          </ul>
-        </nav>
-      </header>
   
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<div>
+  <header>
+    <h1><a href="/index.html">AI Business Services</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/index.html#services">Services</a></li>
+        <li><a href="/index.html#benefits">Benefits</a></li>
+        <li><a href="../conatct/contact.html">Contact</a></li>
+        <li><a href="../about/About.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
   <main>
-    <section id="computer-vision">
-      <div class="container">
-        <h2>Computer Vision</h2>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <section id="computer-vision">
+        <div class="container">
+          <h2>Computer Vision</h2>
 
-        <div class="cv-item">
-          <div class="cv-img">
-            <img src="/Assets/cv2.jpg" alt="Computer Vision 1">
+          <div class="cv-item">
+            <div class="cv-img">
+              <img src="/Assets/cv2.jpg" alt="Computer Vision 1">
+            </div>
+            <div class="cv-content">
+              <h3>What is Computer Vision?</h3>
+              <p>Computer Vision is a field of artificial intelligence that deals with enabling computers to gain
+                high-level understanding from digital images or videos. It involves the development of algorithms and
+                techniques to analyze, interpret, and understand visual data, enabling machines to perceive and
+                comprehend the visual world.</p>
+            </div>
           </div>
-          <div class="cv-content">
-            <h3>What is Computer Vision?</h3>
-            <p>Computer Vision is a field of artificial intelligence that deals with enabling computers to gain high-level understanding from digital images or videos. It involves the development of algorithms and techniques to analyze, interpret, and understand visual data, enabling machines to perceive and comprehend the visual world.</p>
+
+          <div class="cv-item">
+            <div class="cv-img">
+              <img src="/Assets/cv1.jpeg" alt="Computer Vision 2">
+            </div>
+            <div class="cv-content">
+              <h3>Applications of Computer Vision</h3>
+              <p>Computer Vision has a wide range of applications across various industries. It is used in object
+                detection and recognition, image segmentation, facial recognition, video analysis, augmented reality,
+                autonomous vehicles, medical imaging, and more. Computer Vision technologies empower businesses to
+                automate visual tasks, enhance decision-making, and improve user experiences.</p>
+            </div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-img">
+              <img src="/Assets/cv3.png" alt="Computer Vision 3">
+            </div>
+            <div class="cv-content">
+              <h3>Benefits of Computer Vision</h3>
+              <ul>
+                <li>Automated inspection and quality control in manufacturing processes.</li>
+                <li>Improved object recognition and tracking for surveillance systems.</li>
+                <li>Efficient image and video analysis for content moderation.</li>
+                <li>Enhanced medical diagnostics and treatment planning.</li>
+                <li>Accurate facial recognition for identity verification and access control.</li>
+                <li>Augmented reality experiences for marketing and entertainment.</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="cv-item">
-          <div class="cv-img">
-            <img src="/Assets/cv1.jpeg" alt="Computer Vision 2">
-          </div>
-          <div class="cv-content">
-            <h3>Applications of Computer Vision</h3>
-            <p>Computer Vision has a wide range of applications across various industries. It is used in object detection and recognition, image segmentation, facial recognition, video analysis, augmented reality, autonomous vehicles, medical imaging, and more. Computer Vision technologies empower businesses to automate visual tasks, enhance decision-making, and improve user experiences.</p>
-          </div>
-        </div>
-
-        <div class="cv-item">
-          <div class="cv-img">
-            <img src="/Assets/cv3.png" alt="Computer Vision 3">
-          </div>
-          <div class="cv-content">
-            <h3>Benefits of Computer Vision</h3>
-            <ul>
-              <li>Automated inspection and quality control in manufacturing processes.</li>
-              <li>Improved object recognition and tracking for surveillance systems.</li>
-              <li>Efficient image and video analysis for content moderation.</li>
-              <li>Enhanced medical diagnostics and treatment planning.</li>
-              <li>Accurate facial recognition for identity verification and access control.</li>
-              <li>Augmented reality experiences for marketing and entertainment.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="service-cta">
+      </section>
+      <div class="service-cta">
         <h3>Ready to leverage the power of Computer Vision for your business?</h3>
         <p>Contact our team to discuss your requirements and explore how our expertise can help you.</p>
         <a href="../conatct/contact.html" class="cta-btn">Get Started</a>
       </div>
-  </main>
+    </div>
+    </main>
 
   <footer class="footer">
     <div class="container">
@@ -106,6 +117,11 @@
   </footer>
   <script src="https://kit.fontawesome.com/efd8402816.js" crossorigin="anonymous"></script>
 
-  <script src="script.js"></script>
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- <script src="script.js"></script> -->
+  </body>
+
 </html>

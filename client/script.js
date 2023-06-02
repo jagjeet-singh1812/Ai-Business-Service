@@ -5,6 +5,9 @@
 //   },2000)
 //   preloader.style.display = "none";
 // });
+
+
+
 setTimeout(function() {
   let preloader = document.getElementById("preloader");
   preloader.style.display = "none";

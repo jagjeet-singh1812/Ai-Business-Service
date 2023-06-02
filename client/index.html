@@ -7,6 +7,8 @@
   <title>AI Business Services</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body onload="slidershift()">
@@ -48,43 +50,53 @@
       </div> -->
     </section>
 
-    <section id="hero">
-      <h2>Empowering Businesses with Artificial Intelligence</h2>
-      <p>Unlock the power of AI to revolutionize your business.</p>
-      <a href="#services" class="cta-btn">Discover Our Services</a>
-    </section>
-
+    <div data-aos="zoom-in" data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">
+      <section id="hero">
+        <h2>Empowering Businesses with Artificial Intelligence</h2>
+        <p>Unlock the power of AI to revolutionize your business.</p>
+        <a href="#services" class="cta-btn">Discover Our Services</a>
+      </section>
+    </div>
 
 
     <div class="services-container">
       <h1>Our Services</h1>
       <a href="./pages/ml/ml.html">
-        <div class="service">
-          <img src="./Assets/machine_learning.jpg" alt="Service 1">
-          <h3>Machine Learning</h3>
-          <p>Unlock valuable insights from your data using state-of-the-art machine learning algorithms.</p>
-          <p class="read_more">click on this to know more....</p>
+        <div data-aos="flip-down">
+          <div class="service">
+            <img src="./Assets/machine_learning.jpg" alt="Service 1">
+            <h3>Machine Learning</h3>
+            <p>Unlock valuable insights from your data using state-of-the-art machine learning algorithms.</p>
+            <p class="read_more">click on this to know more....</p>
+          </div>
         </div>
       </a>
 
-      <div class="service">
-        <img src="./Assets/nlp.png" alt="Service 2">
-        <h3>Natural Language Processing</h3>
-        <p>Transform unstructured text into meaningful information with our advanced natural language processing
-          techniques.</p>
-        <p class="read_more" id="a">click on this to know more....</p>
+      <a href="./pages/nlp/nlp.html"></a>
+      <div data-aos="flip-up">
+        <div class="service">
+          <img src="./Assets/nlp.png" alt="Service 2">
+          <h3>Natural Language Processing</h3>
+          <p>Transform unstructured text into meaningful information with our advanced natural language processing
+            techniques.</p>
+          <p class="read_more" id="a">click on this to know more....</p>
+        </div>
       </div>
+      </a>
 
       <a href="./pages/cv/cv.html">
-        <div class="service">
-          <img src="./Assets/computer_vision.jpeg" alt="Service 3">
-          <h3>Computer Vision</h3>
-          <p>Enable machines to perceive and understand images or videos, opening up a wide range of possibilities.</p>
-          <p class="read_more">click on this to know more....</p>
+        <div data-aos="flip-down">
+          <div class="service">
+            <img src="./Assets/computer_vision.jpeg" alt="Service 3">
+            <h3>Computer Vision</h3>
+            <p>Enable machines to perceive and understand images or videos, opening up a wide range of possibilities.
+            </p>
+            <p class="read_more">click on this to know more....</p>
+          </div>
         </div>
-    </div>
-    </a>
-
+      </a>
     </div>
 
 
@@ -92,54 +104,58 @@
       <div class="autoh">
         <h2>Our Services</h2>
         <div class="temp">
-
-          <a href="./pages/ml/ml.html">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./Assets/machine_learning.jpg" alt="student" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h3>Machine Learning</h3>
-                <p>Unlock valuable insights from your data using state-of-the-art machine learning algorithms.</p>
-                <p class="read_more">click on this to know more....</p>
-              </div>
-            </div>
-          </div>
-          </a>
-
-          <a href="./pages/cv/cv.html">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./Assets/computer_vision.jpeg" alt="student" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                  <h3>Computer Vision</h3>
-                  <p>Enable machines to perceive and understand images or videos, opening up a wide range of
-                    possibilities.</p>
-                  <p class="read_more">click on this to know more....</p>
+          <div data-aos="fade-right">
+            <a href="./pages/ml/ml.html">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./Assets/machine_learning.jpg" alt="student" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h3>Machine Learning</h3>
+                    <p>Unlock valuable insights from your data using state-of-the-art machine learning algorithms.</p>
+                    <p class="read_more">click on this to know more....</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-
-          
-          <a href="./pages/nlp/nlp.html">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./Assets/nlp.png" alt="student" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h3>Natural Language Processing</h3>
-                <p>Transform unstructured text into meaningful information with our advanced natural language processing
-                  techniques.</p>
-                <p class="read_more" id="a">click on this to know more....</p>
-              </div>
-            </div>
+            </a>
           </div>
-          </a>
+          <div data-aos="fade-left">
+            <a href="./pages/cv/cv.html">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./Assets/computer_vision.jpeg" alt="student" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h3>Computer Vision</h3>
+                    <p>Enable machines to perceive and understand images or videos, opening up a wide range of
+                      possibilities.</p>
+                    <p class="read_more">click on this to know more....</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div data-aos="fade-left">
+            <a href="./pages/nlp/nlp.html">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./Assets/nlp.png" alt="student" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h3>Natural Language Processing</h3>
+                    <p>Transform unstructured text into meaningful information with our advanced natural language
+                      processing
+                      techniques.</p>
+                    <p class="read_more" id="a">click on this to know more....</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
         </div>
 
@@ -148,25 +164,28 @@
     </section>
   </main>
 
-  <section id="benefits">
-    <h2>Benefits of Our AI Solutions</h2>
-    <ul class="benefits-list">
-      <li><i class="fas fa-chart-line"></i> Enhanced decision-making with data-driven insights</li>
-      <li><i class="fas fa-cogs"></i> Increased operational efficiency and cost savings</li>
-      <li><i class="fas fa-user-check"></i> Improved customer experience through personalized interactions</li>
-      <li><i class="fas fa-robot"></i> Automated and streamlined business processes</li>
-      <li><i class="fas fa-trophy"></i> Competitive advantage in the AI-driven market</li>
-      <li><i class="fas fa-expand-arrows-alt"></i> Scalable and adaptable solutions to meet evolving business needs</li>
-      <li><i class="fas fa-comments"></i> Natural language processing and sentiment analysis:</li>
-      <li><i class="fas fa-shield-alt"></i> Enhanced cybersecurity and threat detection:</li>
-    </ul>
-  </section>
+  <div data-aos="zoom-in-up">
+    <section id="benefits">
+      <h2>Benefits of Our AI Solutions</h2>
+      <ul class="benefits-list">
+        <li><i class="fas fa-chart-line"></i> Enhanced decision-making with data-driven insights</li>
+        <li><i class="fas fa-cogs"></i> Increased operational efficiency and cost savings</li>
+        <li><i class="fas fa-user-check"></i> Improved customer experience through personalized interactions</li>
+        <li><i class="fas fa-robot"></i> Automated and streamlined business processes</li>
+        <li><i class="fas fa-trophy"></i> Competitive advantage in the AI-driven market</li>
+        <li><i class="fas fa-expand-arrows-alt"></i> Scalable and adaptable solutions to meet evolving business needs
+        </li>
+        <li><i class="fas fa-comments"></i> Natural language processing and sentiment analysis:</li>
+        <li><i class="fas fa-shield-alt"></i> Enhanced cybersecurity and threat detection:</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Interested in our AI services? Get in touch with our team.</p>
-    <a href="mailto:info@ai-business-services.com" class="cta-btn">Contact Now</a>
-  </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Interested in our AI services? Get in touch with our team.</p>
+      <a href="mailto:info@ai-business-services.com" class="cta-btn">Contact Now</a>
+    </section>
+  </div>
   </main>
 
   <footer class="footer">
@@ -202,10 +221,12 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/efd8402816.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
