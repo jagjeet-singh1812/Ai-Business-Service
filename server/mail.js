@@ -100,54 +100,108 @@ const sendmail2=async(user,service,message,firstname)=>{
   if(service==="" || message==="") return;
   mailoptions2.to=user;
   mailoptions2.html=`
-  <html>
-    <head>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f9f9f9;
-          margin: 0;
-          padding: 0;
-        }
-        .container {
-          max-width: 600px;
-          margin: 0 auto;rs
+  <!DOCTYPE html>
+<html>
 
-          padding: 20px;
-          background-color: #ffffff;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-          color: #333333;
-          text-align: center;
-          margin-bottom: 20px;
-        }
-        p {
-          color: #555555;
-          margin-bottom: 10px;
-        }
-        .lead {
-          background-color: #f2f2f2;
-          padding: 10px;
-          border-radius: 5px;
-        }
-        .img{
-          margin:auto;
-          width:80vw;
-          height:auto
-        }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <h1>${firstname} you have Succesfully Registered!</h1>
-        <h3>Thank you for Choosing us !!!</h3>
-        <p>Our Team will Contact you in 24 hours related to your ${service}</p>
-        <p> Thank you for your continuous trust in our business. It brings us great joy to serve you. I hope we can continue to earn your business and if you have any comments or concerns, please let us know so we can help you better.</p>
-      </div>
-    </body>
-  </html>
+<head>
+  <style>
+    /* CSS for Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* CSS for UI/UX */
+    body {
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      color: #333333;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666666;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .button {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Thank You for Choosing Us,${firstname}!</h1>
+    <p>We appreciate your decision to partner with our AI business. Our team will review your request and get back to you within 24 hours.</p>
+    <p>In the meantime, if you have any urgent questions or concerns, feel free to reach out to us.</p>
+    <img class="image" src="https://www.analyticsinsight.net/wp-content/uploads/2021/08/How-can-AI-transform-business-intelligence.jpg" alt="AI Business">
+    <p>Best regards,<br>Your AI Business Team</p>
+    <a class="button" href="mailto:info@yourbusiness.com">Contact Us</a>
+  </div>
+</body>
+
+</html>
+
+
 `
   console.log(mailoptions2)
   if(service!="" || message!=""){
